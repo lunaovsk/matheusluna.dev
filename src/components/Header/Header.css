@@ -43,28 +43,3 @@ nav {
     font-size: 16px;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.link-contato {
-    background-color: #030213;
-    color: #ffffff;
-    font-size: 14px;
-    border-radius: 8px;
-    padding: 6px 10px 6px 10px;
-    
-}
-
-.link-contato:hover {
-    background-color: #111827;
-    color: #ffffff;
-}
-
-button:hover {
-    color: #2563eb;
-    opacity: 0.9;
-}

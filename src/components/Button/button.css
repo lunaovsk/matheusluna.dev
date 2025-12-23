@@ -1,0 +1,58 @@
+.btn {
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn.transparent {
+    background-color: transparent;
+}
+
+.btn.dark {
+    background-color: #030213;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 6px 10px 6px 10px;
+    
+}
+
+.btn.dark:hover {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.btn:hover {
+    color: #2563eb;
+    opacity: 0.9;
+}
+
+/* btn hero */
+
+.btn.darkPf, .btn.lightC{
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+.btn.darkPf {
+    background-color: #030213;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.btn.lightC {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #111827;
+}
+.btn.lightC:hover {
+    background-color: #f9fafb;
+    color: #030213;
+}
+
+.btn.darkPf:hover {
+    background-color: #111827;
+    color: #ffffff;
+}

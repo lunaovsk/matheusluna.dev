@@ -1,9 +1,12 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
-import './Hero.css'
-import scrollToSection from '../../utils/scroll.js';
+import './Hero.css';
+import Button from '../../components/Button/Buttons'; 
+import { buttonHero } from '../../config/buttonConfig'; 
+import { useScroll } from '../../utils/useScroll';
 
 function Hero () {
+    const {toSection} = useScroll();
     return (
         <section className="hero" id="sobre">
             <div className="container-hero">
@@ -18,8 +21,16 @@ function Hero () {
                     </p>
                 </div>
                 <div className="container-links">
-                    <button onClick={() => scrollToSection('contato')} className="container-link-portfolio">Ver Portfólio</button>
-                    <button onClick={() => scrollToSection('contato')} className="container-link-contato">Entrar em Contato</button>
+                    {buttonHero.map((btn, index) => (
+                        <Button
+                            key={index}
+                            text={btn.text}
+                            variant={btn.variant}
+                            onClick={() => toSection(btn.target)}
+                        />
+                    ))}
+
+                    
                 </div>
                 <div className="container-redes">
                     <a href="https://github.com/lunaovsk"><FiGithub/></a>
