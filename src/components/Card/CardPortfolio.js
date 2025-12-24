@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 
-const CardPortfolio = ({img, name, description, tech, linkDemo, linkGit}) => {
+const CardPortfolio = ({id, img, name, description, tech, linkDemo, linkGit}) => {
     const [currentTagIndex, setCurrentTagIndex] = useState(0);
     const tagsPerPage = 3;
 
@@ -25,7 +25,7 @@ const CardPortfolio = ({img, name, description, tech, linkDemo, linkGit}) => {
     
     return (
         <div className='container-cardProjects'>
-            <img src={img} alt={name}/>
+            <img src={img} alt={name} className={`img ${id}`}/>
             <h3 className='title-project'>{name}</h3>
             <p className='container-descriptionProject'>{description}</p>
             <div className="container-tags-wrapper">

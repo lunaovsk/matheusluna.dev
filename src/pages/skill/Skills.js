@@ -1,13 +1,11 @@
 import Card from '../../components/Card/Card';
 import './Skills.css';
+import Title from '../../components/Title/Title.js';
 
 const Skill = ({title, paragraph, cards}) => {
     return (
-    <section className='service' id='habilidades'>
-        <div className='container-header-service'>
-            <h1>{title}</h1>
-            <p>{paragraph}</p>
-        </div>
+    <section className='skill' id='habilidades'>
+        <Title title={title} paragraph={paragraph}/>
         <div className='container-card'>
             {cards.map((card, index) => (
             <Card
@@ -22,4 +20,4 @@ const Skill = ({title, paragraph, cards}) => {
     )
 }
 
-export default Skill;
+export default Skill; 

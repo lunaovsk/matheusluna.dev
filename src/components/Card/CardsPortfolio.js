@@ -1,14 +1,9 @@
 import abraceRNImg from '../../assets/img/projects/DashboardAbraceRN.jpeg';
-
-
-export const sectionPortfolio =
-    {
-        title: 'Portfólio',
-        paragraph: 'Alguns dos projetos que desenvolvi recentemente'
-    };
+import APIAbraceRNImg from '../../assets/img/projects/APIAbraceRN.jpeg';
 
 export const cardProject = [
-    {
+    {   
+        id: "abrace-front",
         img: abraceRNImg,
         name: "Dashboard Administrativo Abrace RN (front)",
         description: "  Sistema de gestão de estoque para ONG Abrace um RN, com dashboard intuitivo, cadastro inteligente de itens por categoria e monitoramento em tempo real.",
@@ -17,7 +12,8 @@ export const cardProject = [
         linkGit: "https://github.com/lunaovsk/abraceRN-front"
     },
     {
-        img: "", 
+        id: "abrace-back",
+        img: APIAbraceRNImg, 
         name: "Abrace RN – API REST de Gestão de Estoque",
         description: "API para gestão de estoque da ONG Abrace um RN, com cadastro inteligente de itens, validações por categoria e sistema de soma automática de quantidades.",
         tech: ["Java 21","Spring Boot","REST API","JPA/Hibernate","MySQL","Flyway","Swagger"],

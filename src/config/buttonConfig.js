@@ -20,7 +20,32 @@ export const buttonHeader = [
         text: "Portfólio",
         target: "portfolio",
         variant: "transparent"
+    },
+
+]
+
+export const buttonFooter = [
+    {
+        text: "Sobre",
+        target: "sobre",
+        variant: "transparent-footer"
+    },
+    {
+        text: "Habilidades",
+        target: "habilidades",
+        variant: "transparent-footer"
+    },
+    {
+        text: "Portfólio",
+        target: "portfolio",
+        variant: "transparent-footer"
+    },
+    {
+        text: "Contato",
+        target: "contato",
+        variant: "transparent-footer"
     }
+
 ]
 
 export const buttonHero = [
@@ -36,3 +61,9 @@ export const buttonHero = [
     }
 
 ]
+
+export const buttonContact = {
+    text: "Enviar Mensagem",
+    target: "",
+    variant: "darkContact"
+}

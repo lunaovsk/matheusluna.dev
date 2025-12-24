@@ -1,8 +1,8 @@
 import { BiCodeAlt } from "react-icons/bi";
 import './Header.css';
 import Button from '../Button/Buttons'; 
-import { buttonContactA, buttonHeader } from '../../config/buttonConfig'; // ✅ config
-import { useScroll } from '../../utils/useScroll';
+import { buttonContactA, buttonHeader } from '../../config/buttonConfig';
+import { useScroll } from '../../utils/useScroll.js';
 
 
 function Header () {
@@ -11,7 +11,7 @@ function Header () {
         <header className="header">
             <div className="container-header">
                 <BiCodeAlt className="code-icon"/>
-                <h1>Matheus Luna</h1>
+                <h1>Matheus Luna</h1>         
             </div>
             <nav>
                 {buttonHeader.map((btn, index) => (

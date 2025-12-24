@@ -1,12 +1,6 @@
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 import { FiServer, FiDatabase } from "react-icons/fi";
 
-export const sectionTech =
-    {
-        title: 'Habilidades & Serviços',
-        paragraph: 'Tecnologias e serviços que domino para transformar suas ideias em realidade'
-    };
-
 export const cardTech = [
   {
     icon: <><VscChevronLeft /><VscChevronRight /></>,

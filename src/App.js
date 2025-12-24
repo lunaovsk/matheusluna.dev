@@ -3,8 +3,12 @@ import Header from './components/Header/Header.js';
 import Hero from './pages/hero/Hero1.js';
 import Skill from './pages/skill/Skills.js';
 import CardProjects from './pages/portfolio/CardProjects.js';
-import { sectionTech, cardTech } from './components/Card/Cards.js';
-import { sectionPortfolio, cardProject } from './components/Card/CardsPortfolio.js';
+import { cardTech } from './components/Card/Cards.js';
+import { cardProject } from './components/Card/CardsPortfolio.js';
+import {SectionSkill, SectionProject, SectionContact} from './components/Title/SectionTitle.js'
+import Contact from './pages/Contact/Contact.js'
+import { fields } from './components/Input/InputText.js';
+import Footer from './components/Footer/Footer.js';
 
 function App() {
   return (
@@ -13,16 +17,23 @@ function App() {
       <Hero/>
       
       <Skill
-        title={sectionTech.title}
-        paragraph={sectionTech.paragraph}
+        title={SectionSkill.title}
+        paragraph={SectionSkill.paragraph}
         cards={cardTech}
       />
       
       <CardProjects
-        title={sectionPortfolio.title}
-        paragraph={sectionPortfolio.paragraph}
+        title={SectionProject.title}
+        paragraph={SectionProject.paragraph}
         cardProject={cardProject}
       />
+
+      <Contact
+        title={SectionContact.title}
+        paragraph={SectionContact.paragraph}
+        fields={fields}
+      />
+      <Footer/>
     </>
   );
 }
