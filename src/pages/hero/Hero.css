@@ -110,4 +110,61 @@
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 5% 0 5%;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .container-hero {
+    width: 100%;
+    order: 2;
+    margin-top: 30px;
+  }
+  
+  .container-apresentacao h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  
+  .container-apresentacao h2 {
+    font-size: 20px;
+  }
+  
+  .container-apresentacao p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .container-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .container-redes {
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .container-img {
+    order: 1;
+    margin-top: 20px;
+  }
+  
+  .hero-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .blur-effect {
+    width: 220px;
+    height: 220px;
+  }
+}
 

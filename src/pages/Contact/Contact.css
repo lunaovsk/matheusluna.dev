@@ -119,6 +119,38 @@
     color: #4b5563;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    height: auto;
+    padding: 60px 5%;
+  }
+  
+  .container-contactAll {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+  }
+  
+  .container-form,
+  .container-contact-infos {
+    width: 100%;
+  }
+  
+  .container-info {
+    width: 100%;
+  }
+  
+  .container-header-section h1 {
+    font-size: 28px;
+  }
+  
+  .container-header-section p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
 
 
 

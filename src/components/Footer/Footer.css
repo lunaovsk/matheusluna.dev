@@ -84,6 +84,38 @@ footer {
     color: #9ca3af;
 }
 
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 40px 5%;
+  }
+  
+  .container-footer {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+  
+  .container-part1,
+  .container-part2,
+  .container-part3 {
+    width: 100%;
+  }
+  
+  .container-linksRapidos {
+    align-items: center;
+  }
+  
+  .container-redesSociais {
+    align-items: center;
+  }
+  
+  .container-part4 {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
 
 
 

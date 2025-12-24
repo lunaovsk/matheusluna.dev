@@ -1,19 +1,21 @@
 import { BiCodeAlt } from "react-icons/bi";
-import './Header.css';
-import Button from '../Button/Buttons'; 
+import Button from '../Button/Buttons';
 import { buttonContactA, buttonHeader } from '../../config/buttonConfig';
-import { useScroll } from '../../utils/useScroll.js';
+import { useScroll } from '../../utils/useScroll';
+import MobileMenu from './Menu';
+import './Header.css';
 
+function Header() {
+    const { toSection } = useScroll();
 
-function Header () {
-    const {toSection} = useScroll();
     return (
         <header className="header">
             <div className="container-header">
-                <BiCodeAlt className="code-icon"/>
-                <h1>Matheus Luna</h1>         
+                <BiCodeAlt className="code-icon" />
+                <h1>Matheus Luna</h1>
             </div>
-            <nav>
+           
+            <nav className="desktop-nav">
                 {buttonHeader.map((btn, index) => (
                     <Button
                         key={index}
@@ -22,15 +24,16 @@ function Header () {
                         onClick={() => toSection(btn.target)}
                     />
                 ))}
-                <Button 
+                <Button
                     text={buttonContactA.text}
                     variant={buttonContactA.variant}
                     onClick={() => toSection(buttonContactA.target)}
                 />
             </nav>
+            
+            <MobileMenu />
         </header>
     );
-
 }
 
 export default Header;
