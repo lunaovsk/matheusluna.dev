@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Matheus Luna | Portfolio 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi desenvolvido para apresentar as minhas competências, projetos realizados e a minha trajetória no desenvolvimento de software.
 
-## Available Scripts
+## Sobre o Projeto
 
-In the project directory, you can run:
+O site `matheusluna.dev` é uma landing page moderna e responsiva, focada em experiência do utilizador (UX) e performance. O projeto utiliza uma arquitetura de componentes reutilizáveis para facilitar a manutenção e a expansão do código.
 
-### `npm start`
+### Principais Funcionalidades:
+* **Hero Section**: Apresentação principal com call-to-action.
+* **Skills**: Exibição das tecnologias em que me especializo.
+* **Portfolio**: Galeria de projetos, incluindo trabalhos como o **AbraceRN**.
+* **Contact**: Formulário de contacto e links para redes sociais.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **React 19**: Biblioteca principal para a construção da interface.
+* **React Icons**: Biblioteca utilizada para ícones sociais e elementos visuais.
+* **CSS3**: Estilização personalizada, garantindo um design único e responsivo.
+* **JavaScript (ES6+)**: Lógica da aplicação e manipulação dinâmica de dados.
 
-### `npm test`
+## Como Executar o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/lunaovsk/matheusluna.dev.git](https://github.com/lunaovsk/matheusluna.dev.git)
+    ```
 
-### `npm run build`
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm start
+    ```
+    O site estará disponível em `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estrutura de Pastas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `src/components`: Componentes globais e reutilizáveis (Header, Footer, Cards).
+* `src/pages`: Seções principais da aplicação (Hero, Skills, Portfolio).
+* `src/assets`: Recursos estáticos, como imagens dos projetos.
+* `src/utils`: Funções auxiliares e hooks para funcionalidades como scroll.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Desenvolvido por Matheus Luna**.
