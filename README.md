@@ -12,7 +12,7 @@ O site `matheusluna.dev` é uma landing page moderna e responsiva, focada em exp
 * **Portfolio**: Galeria de projetos, incluindo trabalhos como o **AbraceRN**.
 * **Contact**: Formulário de contacto e links para redes sociais.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **React 19**: Biblioteca principal para a construção da interface.
 * **React Icons**: Biblioteca utilizada para ícones sociais e elementos visuais.
