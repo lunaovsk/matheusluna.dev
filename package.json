@@ -2,7 +2,7 @@
   "name": "matheusbluna",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://matheuslunadev.com.br",
+  "homepage": "https://www.matheuslunadev.com.br",
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -38,3 +38,4 @@
     "gh-pages": "^6.3.0"
   }
 }
+
