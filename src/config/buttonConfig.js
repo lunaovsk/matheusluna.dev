@@ -65,5 +65,6 @@ export const buttonHero = [
 export const buttonContact = {
     text: "Enviar Mensagem",
     target: "",
-    variant: "darkContact"
+    variant: "darkContact",
+    type: "submit"
 }

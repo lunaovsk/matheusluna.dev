@@ -1,12 +1,8 @@
 import Input from '../Input/Input.js';
-import Button from '../Button/Buttons.js'
+import Button from '../Button/Buttons.js';
 import { buttonContact } from '../../config/buttonConfig.js';
-import { useScroll } from '../../utils/useScroll';
 
-const Form = ({ fields }) => {
-
-    const {toSection} = useScroll();
-
+const Form = ({ fields, onSubmit }) => { 
     return (
         <div className='container-form'>
             <div className='contact-form'>
@@ -14,19 +10,21 @@ const Form = ({ fields }) => {
                 <p className='paragraph-form'>Preencha o formulário e responderei o mais breve possível</p>
             </div>
             <div className='container-form-contact'>
-                <form id='formulario'>
+        
+                <form id='formulario' onSubmit={onSubmit}> 
                 {fields.map((field, index) => (
                     <Input
-                    key={index}
-                    label={field.label}
-                    type={field.type}
-                    placeholder={field.placeholder}
+                        key={index}
+                        label={field.label}
+                        type={field.type}
+                        name={field.name} 
+                        placeholder={field.placeholder}
                     />
-                    ))}
+                ))}
                     <Button 
                         text={buttonContact.text}
                         variant={buttonContact.variant}
-                        onClick={() => toSection(buttonContact.target)}
+                        type={buttonContact.type}
                     />
                 </form>
             </div>

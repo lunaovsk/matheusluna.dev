@@ -1,11 +1,9 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* HEADER */
 .header {
     position: sticky;
     top: 0;
@@ -19,7 +17,6 @@
     border-bottom: 1px solid #e5e7eb;
 }
 
-/* LOGO */
 .container-header {
     display: flex;
     align-items: center;
@@ -36,24 +33,22 @@
     font-size: 30px;
 }
 
-/* DESKTOP NAV */
 .desktop-nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* MOBILE BUTTON */
+
 .menu-toggle {
     display: none;
 }
 
-/* MOBILE NAV */
 .mobile-nav {
     display: none;
 }
 
-/* MOBILE */
+
 @media (max-width: 768px) {
     .header {
         padding: 0 5%;
@@ -74,7 +69,7 @@
 
     .mobile-nav {
         position: fixed;
-        top: 60px; /* mesma altura do header */
+        top: 60px; 
         left: 0;
         width: 100%;
         background-color: #ffffff;
