@@ -11,8 +11,11 @@ const Contact = ({ title, paragraph, fields }) => {
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Enviando...");
+    
     const formData = new FormData(event.target);
     formData.append("access_key", "4473292a-2288-4d6f-bd1f-b557a96b0145");
+    formData.append("from_name", "Meu Portfólio");
+    formData.append("subject", `Novo Contato: ${formData.get("name")}`);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
