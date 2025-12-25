@@ -41,6 +41,7 @@ const Contact = ({ title, paragraph, fields }) => {
       <div className='container-contactAll'>
         
         <Form fields={fields} onSubmit={onSubmit} />
+        {result && <p className="form-status-message" style={{gridColumn: '1/-1', textAlign: 'center'}}>{result}</p>}
 
         <div className="container-contact-infos">
           {contactData.map((info, index) => (
@@ -51,7 +52,6 @@ const Contact = ({ title, paragraph, fields }) => {
               text={info.text}
             />
           ))}
-          {result && <p className="form-status-message" style={{gridColumn: '1/-1', textAlign: 'center'}}>{result}</p>}
         </div>
       </div>
     </section>
