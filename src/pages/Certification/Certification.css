@@ -1,0 +1,41 @@
+.certification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+.container-certification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20% 0 20%;
+}
+
+
+@media (max-width: 768px) {
+  .certification {
+    padding-top: 40px;
+    height: auto;
+    min-height: auto;
+  }
+
+  .container-certification {
+    padding: 0 5%;
+    width: 100%;
+  }
+  .container-header-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .container-header-section p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    text-align: center;
+  }
+}

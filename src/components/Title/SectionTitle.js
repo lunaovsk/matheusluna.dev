@@ -11,3 +11,8 @@ export const SectionContact = {
         paragraph: 'Tem um projeto em mente? Vamos conversar sobre como posso ajudar'
     };
 
+export const SectionCertification = {
+        title: 'Formação Complementar',
+        paragraph: 'Minha jornada de aprendizado em desenvolvimento de software'
+    };
+
