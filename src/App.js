@@ -5,12 +5,14 @@ import Skill from './pages/skill/Skills.js';
 import CardProjects from './pages/portfolio/CardProjects.js';
 import { cardTech } from './components/Card/Cards.js';
 import { cardProject } from './components/Card/CardsPortfolio.js';
-import {SectionSkill, SectionProject, SectionContact, SectionCertification} from './components/Title/SectionTitle.js'
+import {SectionSkill, SectionProject, SectionContact, SectionCertification, SectionF} from './components/Title/SectionTitle.js'
 import Contact from './pages/Contact/Contact.js'
 import { fields } from './components/Input/InputText.js';
 import Footer from './components/Footer/Footer.js';
 import Certification from './pages/Certification/Certification.js'
 import { listInfo } from './components/Accordion/AccordionInfo.js';
+import { infoF } from './components/Formation/FormationInfo.js';
+import SectionFormation from './pages/Formation/SectionFormation.js';
 
 function App() {
   return (
@@ -28,6 +30,12 @@ function App() {
         title={SectionProject.title}
         paragraph={SectionProject.paragraph}
         cardProject={cardProject}
+      />
+
+      <SectionFormation
+        title={SectionF.title}
+        paragraph={SectionF.paragraph}
+        infoF={infoF}
       />
 
       <Certification

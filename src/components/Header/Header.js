@@ -12,7 +12,7 @@ function Header() {
         <header className="header">
             <div className="container-header">
                 <BiCodeAlt className="code-icon" />
-                <h1>Matheus Luna</h1>
+                <a href="#sobre">Matheus Luna</a>
             </div>
            
             <nav className="desktop-nav">

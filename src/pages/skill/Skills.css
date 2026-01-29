@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* SECTION */
+
 .skill {
     width: 100%;
     padding: 80px 10%;
@@ -14,18 +14,18 @@
     gap: 40px;
 }
 
-/* CONTAINER DOS CARDS */
+
 .container-card {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; /* FUNDAMENTAL */
+    flex-wrap: wrap; 
 }
 
 /* CARD */
 .container-cards {
     width: 100%;
-    max-width: 360px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -34,29 +34,46 @@
     padding: 20px;
 }
 
-/* ÍCONE */
+.container-cards-titles {
+    display: flex;
+    
+}
+.container-cards-titles .icon{
+  
+    display: flex;
+}
+
+.container-cards-titles svg {
+    padding: 0;
+    padding-right: 10px;
+    margin: 0;
+}
+
+
 .icon {
     color: #2563eb;
     font-size: 30px;
+    font-weight: 400;
 }
 
-/* TÍTULO */
+
 .title-tech {
     font-size: 24px;
     font-weight: 400;
 }
 
-/* DESCRIÇÃO */
+
 .container-description {
     font-size: 16px;
+    padding-left: 5px;
     color: #4b5563;
 }
 
-/* TAGS */
+
 .container-tags {
     display: flex;
     gap: 8px;
-    flex-wrap: wrap; /* evita quebrar layout */
+    flex-wrap: wrap; 
 }
 
 .container-tags span {
@@ -66,7 +83,7 @@
     font-size: 12px;
 }
 
-/* MOBILE */
+
 @media (max-width: 768px) {
     .skill {
         padding: 60px 5%;

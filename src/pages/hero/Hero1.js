@@ -43,7 +43,7 @@ function Hero () {
             </div>
             <div className="container-img">
                 <div class="blur-effect"></div>
-                <img src="img/matheusluna (2).png" className="hero-img"></img>
+                <img src="/img/imgHero.jpeg" className="hero-img"></img>
             </div>
         </section>
     );

@@ -1,8 +1,10 @@
 const Card  = ({icon, name, description, tech}) => {
     return (
         <div className='container-cards'>
-            <div className='icon'>{icon}</div>
-            <h2 className='title-tech'>{name}</h2>
+            <div className='container-cards-titles'>
+                <div className='icon'>{icon}</div>
+                <h2 className='title-tech'>{name}</h2>
+            </div>
             <p className='container-description'>{description}</p>
             <div className='container-tags'>
                 {tech.map((t, index) => (
@@ -12,5 +14,4 @@ const Card  = ({icon, name, description, tech}) => {
         </div>
     )
 }
-
 export default Card;
