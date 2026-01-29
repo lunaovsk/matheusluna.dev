@@ -13,7 +13,7 @@ const Certification = ({ title, paragraph, listInfo }) => {
   };
 
   return (
-    <section className="certification" id="formacao">
+    <section className="certification">
       <Title title={title} paragraph={paragraph} />
       <div className="container-certification">
         {listInfo.map((a, index) => (

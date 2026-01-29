@@ -19,13 +19,46 @@ const CardPortfolio = ({id, img, name, description, tech, linkDemo, linkGit}) =>
         if (newIndex < 0) newIndex = 0;
         setCurrentTagIndex(newIndex);
     };
+    const [currentImgIndex, setCurrentImgIndex] = useState(0);
+    const totalImg = img.length;
+    const moveImg = (direction) => {
+        let newIndex = currentImgIndex + direction;
+
+        if (newIndex < 0) {
+            newIndex = totalImg - 1;
+        } else if (newIndex >= totalImg) {
+            newIndex = 0;
+        }
+    setCurrentImgIndex(newIndex);
+    };
 
     const displayedTags = tech.slice(currentTagIndex, currentTagIndex + tagsPerPage);
     const hasMultiplePages = tech.length > tagsPerPage;
     
     return (
-        <div className='container-cardProjects'>
-            <img src={img} alt={name} className={`img ${id}`}/>
+        <div className='container-cardProjects'>  
+            <div className="image-carousel">
+                <img src={img[currentImgIndex]} alt={name} className={`img ${id === 'abrace-back' ? 'contain' : ''}`} />
+                {img.length > 1 && (
+                    <>
+                        <button 
+                            className="carousel-btn-img prev"
+                            onClick={() => moveImg(-1)}
+                            aria-label="Imagem anterior"
+                        >
+                            &#10094;
+                        </button>
+
+                        <button 
+                            className="carousel-btn-img next"
+                            onClick={() => moveImg(1)}
+                            aria-label="Próxima imagem"
+                        >
+                            &#10095;
+                        </button>
+                    </>
+                )}
+            </div>
             <h3 className='title-project'>{name}</h3>
             <p className='container-descriptionProject'>{description}</p>
             <div className="container-tags-wrapper">

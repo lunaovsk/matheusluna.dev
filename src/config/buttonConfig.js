@@ -21,7 +21,11 @@ export const buttonHeader = [
         target: "portfolio",
         variant: "transparent"
     },
-
+    {
+        text: "Formação",
+        target: "formacao",
+        variant: "transparent"
+    }
 ]
 
 export const buttonFooter = [
@@ -41,11 +45,16 @@ export const buttonFooter = [
         variant: "transparent-footer"
     },
     {
+        text: "Formação",
+        target: "formacao",
+        variant: "transparent-footer"
+    },
+    {
         text: "Contato",
         target: "contato",
         variant: "transparent-footer"
     }
-
+    
 ]
 
 export const buttonHero = [
@@ -64,7 +73,6 @@ export const buttonHero = [
 
 export const buttonContact = {
     text: "Enviar Mensagem",
-    target: "",
     variant: "darkContact",
     type: "submit"
 }

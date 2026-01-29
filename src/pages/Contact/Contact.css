@@ -103,9 +103,8 @@
 
 .container-icon {
     display: flex;
+    justify-content: flex-start;
     font-size: 24px;
-    height: 60px;
-    width: 40px;
     color: #2563eb;
 }
 
@@ -116,6 +115,12 @@
 }
 .paragraph-info {
     color: #4b5563;
+}
+
+.container-contact-infos svg{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 768px) {
