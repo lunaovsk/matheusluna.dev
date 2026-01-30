@@ -35,7 +35,7 @@ O site `matheusluna.dev` é uma landing page moderna e responsiva, focada em exp
     ```bash
     npm start
     ```
-    O site estará disponível em `http://localhost:3000`.
+    O site estará disponível em `https://www.matheuslunadev.com.br`.
 
 ## Estrutura de Pastas
 
