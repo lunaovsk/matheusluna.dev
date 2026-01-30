@@ -19,22 +19,6 @@ O site `matheusluna.dev` é uma landing page moderna e responsiva, focada em exp
 * **CSS3**: Estilização personalizada, garantindo um design único e responsivo.
 * **JavaScript (ES6+)**: Lógica da aplicação e manipulação dinâmica de dados.
 
-## Como Executar o Projeto
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/lunaovsk/matheusluna.dev.git](https://github.com/lunaovsk/matheusluna.dev.git)
-    ```
-
-2.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
-
-3.  **Inicie o servidor de desenvolvimento:**
-    ```bash
-    npm start
-    ```
     O site estará disponível em `https://www.matheuslunadev.com.br`.
 
 ## Estrutura de Pastas
