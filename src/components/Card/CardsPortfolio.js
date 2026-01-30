@@ -15,7 +15,7 @@ export const cardProject = [
     },
     {
         id: "abrace-back",
-        img: [backEnd, APIAbraceRNImg],
+        img: [APIAbraceRNImg, backEnd],
         name: "Abrace RN – API REST de Gestão de Estoque",
         description: "API para gestão de estoque da ONG Abrace um RN, com cadastro inteligente de itens, validações por categoria e sistema de soma automática de quantidades.",
         tech: ["Java 21","Spring Boot","REST API","JPA/Hibernate","MySQL","Flyway","Swagger"],
